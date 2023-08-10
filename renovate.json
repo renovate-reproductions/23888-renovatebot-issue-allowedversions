@@ -1,22 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    "group:all",
-    ":renovatePrefix",
-    ":preserveSemverRanges",
-    ":rebaseStalePrs"
+    "config:base"
   ],
-  "dotnet": {
-    "packageRules": [
-      {
-        "matchPackageNames": [
-          "dotnet-sdk"
-        ],
-        "allowedVersions": [
-          "<6.0.200"
-        ]
-      }
-    ]
-  }
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "dotnet-sdk"
+      ],
+      "allowedVersions": [
+        "<6.0.200"
+      ]
+    }
+  ]
 }
