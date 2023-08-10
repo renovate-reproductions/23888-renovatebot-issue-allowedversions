@@ -10,10 +10,6 @@
   "dotnet": {
     "packageRules": [
       {
-        "matchPackagePatterns": ["*"],
-        "groupName": "Dotnet dependencies"
-      },
-      {
         "matchPackageNames": [
           "dotnet-sdk"
         ],
