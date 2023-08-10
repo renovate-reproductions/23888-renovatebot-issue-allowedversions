@@ -1,6 +1,28 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
-  ]
+    "config:base",
+    "group:all",
+    ":renovatePrefix",
+    ":preserveSemverRanges",
+    ":rebaseStalePrs"
+  ],
+  "useBaseBranchConfig": "merge",
+  "dependencyDashboardAutoclose": true,
+  "dotnet": {
+    "packageRules": [
+      {
+        "matchPackagePatterns": ["*"],
+        "groupName": "Dotnet dependencies"
+      },
+      {
+        "matchPackageNames": [
+          "dotnet-sdk"
+        ],
+        "allowedVersions": [
+          "<6.0.200"
+        ]
+      }
+    ]
+  }
 }
