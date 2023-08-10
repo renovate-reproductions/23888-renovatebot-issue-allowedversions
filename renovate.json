@@ -7,8 +7,6 @@
     ":preserveSemverRanges",
     ":rebaseStalePrs"
   ],
-  "useBaseBranchConfig": "merge",
-  "dependencyDashboardAutoclose": true,
   "dotnet": {
     "packageRules": [
       {
@@ -20,7 +18,7 @@
           "dotnet-sdk"
         ],
         "allowedVersions": [
-          "<7"
+          "<6.0.200"
         ]
       }
     ]
