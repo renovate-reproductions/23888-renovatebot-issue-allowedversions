@@ -20,7 +20,7 @@
           "dotnet-sdk"
         ],
         "allowedVersions": [
-          "<6.0.200"
+          "<7"
         ]
       }
     ]
